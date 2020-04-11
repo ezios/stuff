@@ -4,7 +4,7 @@
   cat /proc/bus/input/devices
 - input event stream
      /dev/input/event<n>
-- Input evente structure
+- Input event structure :
   struct input_event
   {
     struct timeval time; /* 16 bytes */
