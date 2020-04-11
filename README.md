@@ -12,3 +12,4 @@
     unsigned short code; /* 2 bytes*/
     unsigned int value;  /  4 bytes */
 };
+    
