@@ -1,6 +1,6 @@
 # stuff
 Linux input
-Connected device , get event number
+Connected device , get event number.
 cat /proc/bus/input/devices 
 input event stream
 /dev/input/event<n>
