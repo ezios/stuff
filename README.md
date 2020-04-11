@@ -1,11 +1,11 @@
 # stuff
 ## Linux input
-Connected device , get event number
-cat /proc/bus/input/devices \n
-input event stream
-/dev/input/event<n>
-Input event structure :
-sruct input_event
+1. Connected device , get event number
+    cat /proc/bus/input/devices 
+2. input event stream
+    /dev/input/event<n>
+3. Input event structure
+   struct input_event
 {
     struct timeval time; /* 16 bytes */
     unsigned short type; /* 2 byes */
