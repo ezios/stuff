@@ -10,10 +10,11 @@ Linux input
      
    Input event structure
    
-   struct input_event
+  ```struct input_event
   {
    struct timeval time; /* 16 bytes */
    unsigned short type; /* 2 byes */
    unsigned short code; /* 2 bytes*/
    unsigned int value;  /* 4 bytes */
   };                   total 24 bytes
+```
