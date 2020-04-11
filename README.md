@@ -1,7 +1,7 @@
 # stuff
 ## Linux input
 Connected device , get event number
-cat /proc/bus/input/devices
+cat /proc/bus/input/devices \n
 input event stream
 /dev/input/event<n>
 Input event structure :
