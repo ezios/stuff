@@ -1,4 +1,4 @@
-# stuff
+stuff
 Linux input
 Connected device , get event number.
 cat /proc/bus/input/devices 
