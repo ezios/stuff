@@ -24,7 +24,7 @@ os.system("rm ZZY*"+file_name+)
  
       
     
-print("[+] done > malv1pwn.zip - malv2.zip")
+print("[+] done > malv1.zip - malv2.zip")
  
  
   
