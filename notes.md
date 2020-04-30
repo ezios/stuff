@@ -8,7 +8,7 @@ echo "<pre>$output</pre>"
 ### mitre att&ck 
   - CTI : Cyber Threat Intelligence
   - TTPS : Tactics Techniques and Procedures : 
-        Example of ttps : Under 5 login attemps --> ban
-                          ttps : 4 login and create new session 
-                          mitigation : 3 Login attemps raises SIEM alert
+       - Example of ttps : Under 5 login attemps --> ban
+                         - ttps : 4 login and create new session 
+                         - mitigation : 3 Login attemps raises SIEM alert
                           
