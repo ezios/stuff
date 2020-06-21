@@ -21,7 +21,7 @@ def listxor(liste):
 
 ###Client
 # deux ensembles de meme taille   
-# E1 est identique à E2 à la différence qu'il contient l'élément i à rechercher, ici i =25  
+# E1 est identique à E2 à la différence qu'il contient l'élément i à rechercher, ici i =54  
 E1 = randomIndex(ListSize=30,interval=(0,99))
 
 E2 = [elements for elements in E1]
