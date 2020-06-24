@@ -4,6 +4,7 @@ import sys
 import os
 import re
 import pytesseract
+import time
 def usage():
     print("--- text recognition ---")
     print('ocrsearch ImageFileOrDirPath WordToSearch')
@@ -81,12 +82,27 @@ def getargs():
         return [os.path.join(Path, f) for f in os.listdir(Path) if os.path.isfile(os.path.join(Path, f))],wordtosearch
 
 
+
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-files,WordToSearch = getargs()
+files,WordToSearch= getargs()
+
+try:
+    destdir  = os.getcwd()+ "/OCR"+str(time.time())
+    os.mkdir(destdir)
+except OSError:
+    print ("Creation of the directory %s failed" % path)
+
 print(files)
+i=0
 for image in files:
+    i+=1
     img = cv2.imread(image)
     d = pytesseract.image_to_data(img, output_type=pytesseract.Output.DICT)
     for i in range(len(d["text"])):
         if re.search(r""+WordToSearch,d["text"][i],re.IGNORECASE):
-            print(d["text"][i])
+            print(d["text"][i]+ " Found in "+image)
+            (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
+            imgc = cv2.rectangle(img, (x, y), (x + w, y + h), (100, 255, 100), 2)
+            cv2.imwrite("G:/Luxant/Zimmerman/"+WordToSearch+str(i)+".png", img) 
+            
