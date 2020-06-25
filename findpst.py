@@ -2,7 +2,7 @@ import os
 import sys
 from subprocess import check_output
 import time
-def walker(path,searchword=b'!BDN'):
+def walker(path,searchword="Microsoft Outlook email"):
     res=[]
     i=0
     out=""
@@ -15,7 +15,7 @@ def walker(path,searchword=b'!BDN'):
                 out = str(check_output(["file",FilePath]))
             except:
                 print("error for "+ FilePath)
-            if "Microsoft Outlook email" in out:
+            if searchword in out:
                 print('[+] '+str(i)+FilePath)
                 i+=1
                 res.append(FilePath)
