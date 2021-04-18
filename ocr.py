@@ -104,5 +104,5 @@ for image in files:
             print(d["text"][i]+ " Found in "+image)
             (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
             imgc = cv2.rectangle(img, (x, y), (x + w, y + h), (100, 255, 100), 2)
-            cv2.imwrite("G:/Luxant/Zimmerman/"+WordToSearch+str(i)+".png", img) 
+            cv2.imwrite("."+WordToSearch+str(i)+".png", img) 
             
